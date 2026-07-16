@@ -1,0 +1,181 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--color-light-bg);
+      color: var(--color-dark);
+    }
+
+/* --- header styling using flexbox --- */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background-color: var(--color-slate);
+      color: var(--color-white);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      color: var(--color-white);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+/* --- gallery section using flexbox --- */
+    .gallery-section {
+      display: flex;
+      gap: 15px;
+      background-color: var(--color-dark);
+      padding: 2rem;
+      align-items: stretch;
+    }
+/* each column is a vertical flexbox */
+    .gallery-col {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      flex: 1;
+    }
+
+/* making the last column wider than the others */
+    .wide-col {
+      flex: 1.5;
+    }
+
+    .gallery-col img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .img-short { height: 150px; }
+    .img-tall { height: 250px; }
+    .img-xtra-tall { height: 415px; }
+    .img-wide { height: 200px; }
+    .img-square { height: 200px; width: 100%; }
+
+    .inner-row {
+      display: flex;
+      gap: 15px;
+    }
+
+    .inner-row img {
+      flex: 1;
+    }
+
+    .invite-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
+    }
+
+/* styling the progress dots */
+    .stepper {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .step {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid var(--color-slate);
+      background-color: transparent;
+    }
+
+    .step.active {
+      background-color: var(--color-slate);
+    }
+
+/* the main white card container */
+    .invite-card {
+      background-color: var(--color-white);
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .invite-card h2 {
+      font-weight: 400;
+      letter-spacing: 3px;
+      margin-bottom: 2rem;
+      color: var(--color-accent);
+    }
+
+    .invite-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      border: 2px solid var(--color-slate);
+      border-radius: 4px;
+      padding: 0.5rem;
+      background-color: var(--color-white);
+    }
+
+    .input-wrapper input {
+      flex-grow: 1;
+      border: none;
+      outline: none;
+      font-family: inherit;
+      font-size: 1rem;
+      padding-left: 0.5rem;
+    }
+    
+/* the small delete icon inside the input box */
+    .remove-btn {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: var(--color-slate);
+    }
+
+    .submit-btn {
+      background-color: var(--color-slate);
+      color: var(--color-white);
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .skip-link {
+      display: block;
+      margin-top: 1rem;
+      color: var(--color-slate);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }

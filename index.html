@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form & Flow - Architecture Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">FORM & FLOW</div>
+    <nav class="main-nav">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">PORTFOLIO</a>
+      <a href="#">FEATURED</a>
+      <a href="#">CONTACT US</a>
+    </nav>
+  </header>
+
+  <section class="gallery-section">
+    <div class="gallery-col">
+      <img src="chill interior.jpg" alt="Modern home exterior" class="img-tall">
+      <img src="minimalistinterior.jpg" alt="Minimalist interior" class="img-short">
+    </div>
+
+    <div class="gallery-col">
+      <img src="kitchendesign.jpg" alt="Kitchen design" class="img-short">
+      <img src="concretefacade.jpg" alt="Concrete facade" class="img-tall">
+    </div>
+
+    <div class="gallery-col">
+      <img src="architecturedetails.jpg" alt="Architecture details" class="img-xtra-tall">
+    </div>
+
+    <div class="gallery-col wide-col">
+      <img src="livingroom.jpg" alt="Open plan living room" class="img-wide">
+      <div class="inner-row">
+        <img src="woodenstaircase.jpg" alt="Wooden staircase" class="img-square">
+        <img src="bathroominterior.jpg" alt="Bathroom interior" class="img-square">
+      </div>
+    </div>
+  </section>
+
+  <section class="invite-section">
+    <div class="stepper">
+      <div class="step"></div>
+      <div class="step active"></div>
+      <div class="step"></div>
+    </div>
+
+    <div class="invite-card">
+      <h2>INVITE USERS</h2>
+      
+      <form class="invite-form">
+        <div class="input-wrapper">
+          <input type="email" placeholder="client1@example.com" value="client1@example.com">
+          <button type="button" class="remove-btn">☒</button>
+        </div>
+        
+        <div class="input-wrapper">
+          <input type="email" placeholder="client2@example.com" value="client2@example.com">
+          <button type="button" class="remove-btn">☒</button>
+        </div>
+        
+        <div class="input-wrapper">
+          <input type="email" placeholder="Enter email address...">
+          <button type="button" class="remove-btn">☒</button>
+        </div>
+        
+        <div class="input-wrapper">
+          <input type="email" placeholder="Enter email address...">
+          <button type="button" class="remove-btn">☒</button>
+        </div>
+
+        <button type="submit" class="submit-btn">SEND INVITES!</button>
+        <a href="#" class="skip-link">SKIP THIS STEP</a>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
