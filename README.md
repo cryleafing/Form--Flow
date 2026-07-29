@@ -1,6 +1,6 @@
 # Form & Flow - Flexbox Layout Challenge
 
-A portfolio and client portal landing page for a fictional architecture studio. This project was developed to demonstrate mastery of the CSS Flexbox module, focusing on building complex, multi-column layouts without relying on CSS Grid.
+A portfolio and client portal landing page for a fictional architecture studio. This project was developed to demonstrate mastery of the CSS Flexbox module, focusing on building complex, multi-column layouts without relying on CSS Grid. The live deployment can be found here [https://cryleafing.github.io/Form--Flow/]
 
 ## The Challenge
 
